@@ -1,0 +1,25 @@
+#pl-mathfuncs {
+
+}
+
+#pl-mathfuncs > div {
+    margin: 10px 0px;
+}
+
+#pl-mathfuncs>div>input[name="func"] {
+    width: 100%;
+    padding: 5px;
+}
+
+#pl-mathfuncs>div.use-cache {
+    color: gray;
+}
+
+#pl-mathfuncs .progress,
+#pl-mathfuncs .results {
+    display: none;
+}
+
+#pl-mathfuncs .progress {
+    margin: 20px 0px;
+}

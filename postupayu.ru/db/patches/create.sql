@@ -1,0 +1,3 @@
+﻿DROP DATABASE IF EXISTS ps_test;
+CREATE DATABASE ps_test;
+USE ps_test;

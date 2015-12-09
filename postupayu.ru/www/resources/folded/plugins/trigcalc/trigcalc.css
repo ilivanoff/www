@@ -1,0 +1,39 @@
+.trig-calc{
+    width: 660px;
+    margin: 12px auto;
+}
+
+.trig-calc .trig-calc-holder{
+    margin: 0px 10px;
+}
+
+table.calculator td, table.calculator tr{
+    border: none;
+    padding: 4px;
+    white-space: nowrap;
+}
+
+table.calculator tr{
+    border: 1px solid #ccc;
+}
+
+table.calculator input{
+    width: 50px;
+}
+
+table.calculator input.big{
+    width: 130px;
+}
+
+table.calculator input.big2{
+    width: 100px;
+}
+
+table.calculator select{
+    width: 76px;
+    color: gray;
+}
+
+table.calculator .col1{
+    width: 50px;
+}

@@ -1,0 +1,142 @@
+.matches {
+    width: 640px;
+    margin: 0px auto;
+    display: none;
+}
+
+/*Задачи*/
+.matches .tasks_info {
+    margin: 10px 0px 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.matches .tasks_info div {
+    display: none;
+}
+
+.matches .tasks_info div.cur {
+    display: block;
+}
+
+
+/*Переключатель задач*/
+.matches .task_switcher {
+    text-align: center;
+    margin: 10px 0px 20px;
+}
+
+.matches .task_switcher .sq {
+    width: 17px;
+    height: 17px;
+    margin: 0px 3px;
+    display: inline-block;
+    background-color: #ddd;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.matches .task_switcher .sq.passed {
+    background-color: #3d0;
+}
+
+.matches .task_switcher .sq.cur {
+    border-color: #444;
+}
+
+/* ИГРОВОЕ ПОЛЕ */
+.matches .play_field {
+    position: relative;
+}
+
+/*Игровое поле - квадраты  (.squares_state) */
+.matches .play_field .s_state {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 116px;
+    cursor: pointer;
+}
+
+.matches .play_field .s_state div.ctt {
+    text-align: center;
+    font-weight: bold;
+    /*    color: #36f;*/
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.matches .play_field .s_state .sq {
+    width: 23px;
+    height: 23px;
+    margin: 3px;
+    display: inline-block;
+    background-color: #ddd;
+}
+
+.matches .play_field .s_state .sq.blue {
+    background-color: #5F87FF;
+}
+
+.matches .play_field .s_state .sq.green {
+    background-color: #cfc;
+}
+
+.matches .play_field .s_state .sq.blue.green {
+    background-color: #3c0;
+}
+
+/*Игровое поле - спички (.matches_state)*/
+.matches .play_field .m_state {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+}
+
+.matches .play_field .m_state img {
+    margin-left: 2px;
+}
+
+
+/* Таблица со спичками */
+.matches table.match {
+    margin: 0px auto;
+    padding: 0px;
+    width: auto;
+}
+
+.matches table.match td {
+    border: none;
+    padding: 0px;
+}
+
+.matches table.match td.err {
+    background-color: red;
+}
+
+.matches table.match td img.hid,
+.matches table.match td.hidden img.vis {
+    display: none;
+}
+
+.matches table.match td.hidden img.hid {
+    display: inline;
+}
+
+.matches table.match td.highlighted {
+    background-color: greenyellow;
+}
+
+/*Ответы*/
+.matches .answers {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.matches .answers select{
+    display: none;
+}
+
+.matches .answers select.cur{
+    display: inline;
+}

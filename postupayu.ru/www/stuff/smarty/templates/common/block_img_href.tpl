@@ -1,0 +1,1 @@
+<span class="blockImgPopup" data-iid="{$id}">рис. {$num}</span>

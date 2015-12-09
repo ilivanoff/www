@@ -1,0 +1,25 @@
+/* Посты */
+#dg-posts {
+    text-align: left;
+}
+
+#dg-posts img {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+#dg-posts select {
+    width: 380px;
+    padding: 2px;
+    overflow: hidden;
+}
+
+#dg-posts select option {
+    padding: 1px 2px;
+}
+
+#dg-posts .select-holder {
+    padding-top: 15px;
+    margin-left: 75px;
+}

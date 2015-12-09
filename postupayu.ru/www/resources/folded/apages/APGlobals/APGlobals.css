@@ -1,0 +1,17 @@
+#globals {
+}
+
+#globals td.editable {
+    text-align: center;
+}
+
+#globals input,
+#globals select {
+    width: 100px;
+    text-align: center;
+}
+
+.apglobals .ctrl{
+    margin: 20px 0px 100px;
+    text-align: center;
+}

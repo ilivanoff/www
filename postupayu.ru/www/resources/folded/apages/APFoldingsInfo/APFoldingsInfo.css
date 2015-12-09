@@ -1,0 +1,12 @@
+.database{
+    cursor: default;
+}
+
+table.database td,
+table.database th {
+    padding: 3px 3px;
+}
+
+ul.sections.depmap {
+    margin-left: 0px;
+}

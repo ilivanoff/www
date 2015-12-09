@@ -1,0 +1,68 @@
+html, body {
+    height:100%;
+}
+
+body {
+    background-color: #fff;
+}
+
+#popup_container{
+    min-height: 100%;
+    position: relative;
+}
+
+#POPUP {
+    text-align: justify;
+    padding-bottom: 60px;
+}
+
+#footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+
+#header {
+    padding: 3px 10px;
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #EEEEEE;
+    color: #aaa;
+    font-size: 15px;
+}
+
+#header a.logo {
+    color: #aaa;
+    text-decoration: none;
+    background: none;
+    padding: 0px;
+}
+
+#header a.logo:hover {
+    color: #7f7f7f;
+}
+
+#header .list, #header #ToolsFilter {
+    float: right;
+}
+
+/* Фильтр */
+#header #ToolsFilter {
+    color: #666;
+    width: 250px;
+    /*margin-top: 1px;*/
+    /*Отменим стандартные границы, чтобы поле помещалось в заголовок*/
+    padding: 0px;
+}
+
+#content {
+    margin: 5px 10px;
+}
+
+
+/*
+    ПРЯЧЕМ ЭЛЕМЕНТЫ, ПРЕДНАЗНАЧЕННЫЕ ДЛЯ basic ОКОН
+*/
+.client-only {
+    display: none;
+}

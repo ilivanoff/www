@@ -1,0 +1,8 @@
+texErrorInlineNotOpen=Внутристрочная формула не была открыта
+texErrorInlineNotClosed=Внутристрочная формула не была закрыта
+
+texErrorBlockNotOpen=Блочная формула не была открыта
+texErrorBlockNotClosed=Блочная формула не была закрыта
+
+texErrorEmptyBlock=Пустая блочная формула
+texErrorEmptyInline=Пустая внутристрочная формула

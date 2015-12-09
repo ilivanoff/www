@@ -1,0 +1,31 @@
+body {
+    padding: 10px 20px;
+}
+
+
+.pngs {
+    background-color: #ddd;
+}
+
+
+.speedtest table {
+    white-space: nowrap;
+    width: 0%;
+}
+
+.speedtest table tr:hover {
+    background-color: #ddd;
+}
+
+.speedtest .bl1{
+    float: left;
+}
+
+.speedtest .bl2{
+    margin-left: 380px;
+}
+
+.speedtest .bl1 h4,
+.speedtest .bl2 h4{
+    margin-top: 0px;
+}

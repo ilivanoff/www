@@ -1,0 +1,55 @@
+#ap-APMappings {
+    min-height: 1500px;
+}
+
+.mappings td {
+    border: none;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.mappings td select {
+    width: 100%;
+}
+
+.mappings td.center {
+    vertical-align: middle;
+    width: 2%;
+}
+
+.mappings td #mapping-select {
+    /*width: auto;*/
+}
+
+.mappings td#left-source {
+    text-align: right;
+    font-weight: bold;
+    width: 49%;
+}
+
+.mappings td#right-source {
+    text-align: left;
+    font-weight: bold;
+    width: 49%;
+}
+
+.mappings .ps-sortable-base label {
+    display: block;
+    position: relative;
+}
+
+.mappings #left-list span.count {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: gray;
+}
+
+.mappings #left-list li.selected {
+    font-weight: bold;
+}
+
+.mappings #right-list label.modified {
+    color: #C22323;
+}

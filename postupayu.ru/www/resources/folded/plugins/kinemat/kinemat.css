@@ -1,0 +1,83 @@
+.kinemat_plugin {
+    width: 680px;
+    margin: 20px auto 30px;
+}
+
+#slider{
+    width: 200px;
+}
+
+.kinemat_plugin .controls {
+    margin: 20px 0px 10px;
+}
+
+.kinemat_plugin .controls .info{
+    margin-top: 4px;
+}
+
+.kinemat_plugin .controls .slider {
+    margin: 4px 0px 3px;
+}
+
+.kinemat_plugin .controls .slider_range {
+    margin-bottom: 10px;
+}
+
+.kinemat_plugin .slider_range .play {
+
+}
+
+/*Управление радиокнопками выбора траектории*/
+.kinemat_plugin .calcs label{
+    display: block;
+    padding-bottom: 5px;
+}
+
+.kinemat_plugin .calcs label .rb {
+    margin-right: 5px;
+}
+
+.kinemat_plugin .calcs.single .tr2,
+.kinemat_plugin .calcs.single .rb {
+    visibility: hidden;
+    display: none;
+}
+
+.kinemat_plugin .calcs.single .not_vis{
+    display: none;
+}
+
+/*Подсказка*/
+.kinemat_plugin .hg-self {
+    display: none;
+    background-color: #FAFAFA;
+    border: 1px solid #E1E1E1;
+    padding: 0px 8px;
+}
+
+.kinemat_plugin .hg-next .help {
+    cursor: help;
+}
+
+.kinemat_plugin .hg-next .help .q{
+    color: #ccc;
+}
+
+.kinemat_plugin .hg-next .help:hover .q{
+    color: black;
+}
+
+.kinemat_plugin .hg-self .close {
+    color: #aaa;
+    margin: 10px 0px;
+    text-align: right;
+}
+
+.kinemat_plugin .hg-self .close span {
+    font-size: 11px;
+}
+
+.kinemat_plugin .hg-self .close span:hover{
+    color: gray;
+    cursor: pointer;
+}

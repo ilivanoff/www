@@ -1,0 +1,83 @@
+/* 
+    ДЕРЖАТЕЛИ АВАТАРОВ 
+*/
+.avatars {
+    border: none;
+    padding: 5px;
+}
+
+.avatars .avatar_holder {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin: 2px;
+    text-align: center;
+    vertical-align: middle;
+
+    cursor: pointer;
+    padding: 3px;
+    border: 1px solid transparent;
+}
+
+.avatars .avatar_holder.selected {
+    cursor: default;
+    padding: 2px;
+    border: 2px dashed green;
+}
+
+.avatars .avatar_holder.current {
+    cursor: default;
+    padding: 1px;
+    border: 3px solid green;
+}
+
+/*
+    Кнопку загрузки аватара опустим немного вниз
+*/
+.uploadifyButton, .uploadifyCtrlButton {
+    margin-top: 10px;
+}
+
+/* 
+    КНОПКИ УПРАВЛЕНИЯ АВАТАРАМИ (КАК FLASH)
+*/
+.avatar-controls div {
+    margin-top: 10px;
+}
+
+.avatar-controls a {
+    font: 12px Arial, Helvetica, sans-serif;
+    padding: 8px;
+    text-align: center;
+    background-color: #505050;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 3px;
+    color: #FFF;
+}
+
+.avatar-controls a.main {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 120px;
+}
+
+.avatar-controls a:hover {
+    cursor: pointer;
+    background-color: #808080;
+    text-decoration: none;
+}
+
+.avatar-controls a.disabled {
+    color: gray;
+}
+
+.avatar-controls a.disabled:hover {
+    background-color: #505050;
+    cursor: default;
+}
+
+/* В офисе не будем показывать в карточке пользователя ссылку на свою же страницу*/
+#bp-office .user_info .user_name .current {
+    display: none;
+}

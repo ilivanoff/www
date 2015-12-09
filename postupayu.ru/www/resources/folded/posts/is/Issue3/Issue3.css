@@ -1,0 +1,26 @@
+/*
+        Анонс номера
+*/
+
+div.anons_carrier {
+    width: 320px;
+    margin: 0 auto;
+    padding: 5px 180px;
+    /*    border: 1px solid #666;*/
+    background-color:#FFC;
+    /*    height: 250px;*/
+    /*    -moz-border-radius: 8px 8px 8px 8px;*/
+    background: url('src/student.png') bottom center no-repeat;
+}
+
+div.anons_carrier h2{
+    padding-left: 10px;
+    /*text-align:center;*/
+    font-weight:bold;
+    margin-bottom: 10px;
+}
+
+div.anons_carrier .anons{
+    /*    background-color: #ffc;*/
+    padding: 10px 10px 10px 30px;
+}

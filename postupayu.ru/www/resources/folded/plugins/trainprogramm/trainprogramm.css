@@ -1,0 +1,572 @@
+#gym_tool{
+    width: 680px;
+    margin: 0px auto;
+}
+/*
+    Переключение режимов
+*/
+.gym_tool_control {
+}
+
+/*
+    По умолчанию блоки спрятаны
+*/
+div.gym_exercises_block, div.gym_programm_block, div.gym_programms_block{
+    display: none;
+}
+
+/*
+    Показать/скрыть упражнения
+*/
+
+.show_hide_exercises{
+}
+
+/*
+    --== УПРАЖНЕНИЯ ==--
+*/
+
+/*
+    Анатомия строения мышц тела
+*/
+
+.anatomy{
+    margin-top: 20px;
+    position: relative;
+    background: url(src/bodybuilder.jpg) center center no-repeat transparent;
+    width: 100%;
+    height: 480px;
+}
+
+.anatomy img{
+    display: block;
+    margin: 0 auto;
+}
+
+.anatomy a{
+    position: absolute;
+    font-weight: bold;
+    color: gray;
+    font-size: 13px;
+    /*    border-bottom: 2px solid gray;*/
+    text-decoration: underline;
+}
+
+.anatomy a:hover{
+    color: black;
+}
+
+
+
+/*
+    Таблица с видом и группой мышц
+*/
+
+.exercises_control td{
+    border: none;
+    padding: 8px 6px;
+}
+
+.exercises_control td.col1{
+    text-align: right;
+    width: 50%;
+}
+
+.exercises_control a{
+    color: black;
+}
+
+.exercises_control a:hover{
+    text-decoration: none;
+}
+
+.exercises_control a.mosaic{
+    padding-right: 13px;
+    background: url('/resources/images/is/Issue3/mosaic.jpg') right center no-repeat;
+}
+
+.exercises_control a.table{
+    padding-right: 18px;
+    background: url('/resources/images/is/Issue3/table.jpg') right center no-repeat;
+}
+
+.exercises_control .group .col2 a{
+    padding: 2px;
+}
+
+.exercises_control tr.group td.col1, .exercises_control tr.view td.col1{
+    font-weight: bold;
+}
+
+
+/*
+    Информация
+*/
+.exercises_info{
+    text-align: center;
+}
+
+.exercises_info span.name{
+    font-weight: bold;
+}
+
+/*
+    Мышцы на картинке
+*/
+
+.anatomy a.trap1{
+    top: 32px;
+    left: 128px;
+}
+
+.anatomy a.trap2{
+    top: 110px;
+    left: 490px;
+}
+
+.anatomy a.gr{
+    top: 58px;
+    left: 285px;
+}
+
+.anatomy a.bc{
+    top: 104px;
+    left: 94px;
+}
+
+.anatomy a.dl{
+    top: 106px;
+    left: 336px;
+}
+
+.anatomy a.pr{
+    top: 230px;
+    left: 80px;
+}
+
+.anatomy a.kv{
+    top: 275px;
+    left: 97px;
+}
+
+.anatomy a.ik{
+    top: 390px;
+    left: 340px;
+}
+
+.anatomy a.tric{
+    top: 156px;
+    left: 526px;
+}
+
+.anatomy a.bb{
+    top: 340px;
+    left: 485px;
+}
+
+.anatomy a.yg{
+    top: 309px;
+    left: 501px;
+}
+
+.anatomy a.sh{
+    top: 275px;
+    left: 285px;
+}
+
+.anatomy a.rs{
+    top: 306px;
+    left: 292px;
+}
+
+/*
+    Таблица с упражнениями
+*/
+
+.exercises{
+    /*    display: none;*/
+}
+
+.exercises th{
+    white-space: nowrap;
+}
+
+.exercises th span{
+    margin-right: 25px;
+}
+
+.exercises td{
+    text-align: left;
+}
+
+.exercises th.col1{
+    width: 100%;
+}
+
+.exercises th, .exercises td {
+    padding: 5px 6px;
+}
+
+
+/*Упражнение*/
+.exercises tr.cur a.gym_ex {
+    color: black;
+    cursor: default;
+    text-decoration: none;
+}
+
+
+/*Добавить в программу*/
+.exercises a.add {
+    float: right;
+    visibility: hidden;
+}
+
+.exercises a.add:hover {
+    text-decoration: none;
+}
+
+.exercises tr:hover a.add, .exercises tr.cur a.add {
+    visibility: visible;
+}
+
+.exercises tr.added a.add{
+    display: none;
+}
+
+/*Удалить из программы*/
+.exercises a.del {
+    float: right;
+    display: none;
+}
+
+.exercises a.del:hover {
+    text-decoration: none;
+}
+
+.exercises tr.added a.del {
+    display: inline;
+}
+
+
+/*
+    Упражнение
+*/
+
+.exercise{
+    border: 1px solid #ccc;
+    margin: 20px 0px 40px;
+    padding: 10px;
+    position: relative;
+}
+
+.exercise h2, .exercise h4{
+    clear: both;
+}
+
+.exercise .title{
+    cursor: default;
+    text-align: center;
+}
+
+/*Кнопки добавить/удалить из упражнения*/
+.exercise .exercise_ctrl {
+    position: absolute;
+    padding: 3px;
+    right: 6px;
+    top: 20px;
+    background-color: white;
+    display: none;
+}
+
+.exercise:hover .exercise_ctrl, .exercise.added .exercise_ctrl {
+    display: block;
+}
+
+/*add*/
+.exercise.added a.add{
+    display: none;
+}
+
+/*del*/
+.exercise .exercise_ctrl a.del{
+    display: none;
+}
+
+.exercise.added a.del{
+    display: inline;
+}
+
+
+
+/*Группа мышц*/
+.exercises a.gym_gr {
+    color: black;
+}
+
+
+
+
+/*
+    --== КОНСТРУКТОР ПРОГРАММ ==--
+*/
+
+
+
+#gymex_prev{
+    margin: 30px 0px;
+}
+
+div.user_training_programm {
+    margin: 10px 0px;
+}
+
+div.user_training_programm h2.name{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+div.user_training_programm h2.name input{
+    font-size: 18px;
+    width: 575px;
+    margin: 0px 10px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+}
+
+/*
+    input - поля
+*/
+
+div.user_training_programm input{
+    padding: 3px;
+}
+
+div.user_training_programm input:focus{
+    border-color: gray;
+}
+
+div.user_training_programm input.manual{
+    width: 500px;
+}
+
+
+/*
+    Управление просмотром. Кнопка "Сохранить"
+*/
+.gym_tool .prog_ctrl_block{
+}
+
+.gym_tool .prog_ctrl {
+    text-align: center;
+    padding: 10px 0;
+}
+
+/*
+    Отображение ошибок
+*/
+
+.gym_tool .info{
+    margin: 10px 0px 20px;
+    display: none;
+    text-align: center;
+}
+
+
+
+
+
+
+ol.user_exercises {
+
+}
+
+ol.user_exercises li{
+    padding: 5px;
+    margin: 20px 0px;
+}
+
+ol.user_exercises .comment{
+    text-indent: 0px;
+    color: gray;
+    font-style: italic;
+}
+
+ol.user_exercises div.sets{
+    text-align: center;
+    margin: 15px 0px;
+}
+
+ol.user_exercises div.sets div.set{
+    text-align: center;
+    margin: 7px 0px;
+}
+
+ol.user_exercises div.sets span.set{
+    /*    padding-top: 10px;*/
+    margin: 0px 10px;
+}
+
+ol.user_exercises a.ctrl {
+    /*    font-family: "Comic Sans MS", cursive, sans-serif;*/
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px;
+    color: #ccc;
+}
+
+ol.user_exercises span.ex_ctrls{
+    white-space: nowrap;
+}
+
+ol.user_exercises a.ctrl:hover{
+    text-decoration: none;
+}
+
+ol.user_exercises a.add:hover{
+    color: green;
+}
+
+ol.user_exercises a.del:hover{
+    color: red;
+}
+
+ol.user_exercises a.change:hover{
+    color: #339;
+}
+
+ol.user_exercises a.up:hover{
+    color: green;
+}
+
+ol.user_exercises a.down:hover{
+    color: red;
+}
+
+
+
+
+
+ol.user_exercises div.sets table{
+    display: inline;
+    margin: 0px 10px;
+}
+
+ol.user_exercises div.sets table td{
+    border: none;
+    padding: 0px;
+}
+
+ol.user_exercises div.sets table td.top{
+    border-bottom: 1px solid black;
+}
+
+
+ol.user_exercises div.sets input{
+    /*    width: 80px;*/
+    /*    border-color: #ccc;*/
+    text-align: center;
+    margin: 0px 3px;
+}
+
+
+.user_exercises select {
+    width: 508px;
+    padding: 2px;
+}
+
+
+/*
+    select - упражнений
+*/
+
+select.gym_exercises{
+
+}
+
+select.gym_exercises option.gym_gr{
+    font-weight: bold;
+}
+
+select.gym_exercises option.gym_ex{
+    padding-left: 15px;
+}
+
+
+
+
+/*
+    --== ПРОСМОТР УПРАЖНЕНИЙ ==--
+*/
+
+.gym_programm {
+    margin: 14px 0px 30px;
+    /*    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.49);*/
+    /*    border-left: 1px  solid #ddd;*/
+}
+
+.gym_programm h3 {
+    /*    padding: 10px;*/
+    background-color: #444;
+    margin: 0px;
+    padding: 4px 5px 5px 15px;
+    color: white;
+    background-color: #363636;
+}
+
+.gym_programm .content{
+    padding: 1px;
+    margin: 0px 1px 0px;
+    border: 1px solid #ccc;
+    border-top: none;
+    position: relative;
+    /*    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.49);*/
+}
+
+.gym_programm .view_control{
+    text-align: right;
+    position: absolute;
+    right: 7px;
+    top: 5px;
+    color: gray;
+    font-size: 11px;
+    display: none;
+}
+
+.gym_programm .content:hover .view_control{
+    display: block;
+}
+
+.gym_programm .content .ctrl{
+    margin: 7px 7px 2px;
+    border-top: 1px dotted #ddd;
+    font-size: 10px;
+    padding: 6px 0px;
+    text-align: right;
+    visibility: hidden;
+}
+
+.gym_programm .content:hover .ctrl{
+    visibility: visible;
+}
+
+/*
+    Картинки - block и popup.
+*/
+.gym_programm .content img.preview{
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.gym_programm .content img.block{
+    display: none;
+    cursor: pointer;
+}
+
+.gym_programm.show_block .content img.block{
+    display: block;
+}
+
+.gym_programm.show_block .content img.preview{
+    display: none;
+}

@@ -1,0 +1,48 @@
+/* Всегда показываем полосу прокрутки справа, чтобы она не скакала в процессе фильтрации */
+html {
+    overflow-y: scroll;
+}
+
+.popup-tool{
+    margin: 10px 0px;
+    padding: 5px;
+    border: 1px dashed #ddd;
+    border-radius: 2px 2px 2px 2px;
+}
+
+.popup-tool .star{
+    float: right;
+}
+
+.popup-tool h4{
+    margin-top: 0px;
+}
+
+.popup-tool h4 a{
+    color: black;
+    text-decoration: none;
+}
+
+.popup-tool:hover{
+    background-color: #FFFFE1;
+    border: 1px solid #bbb;
+}
+
+.popup-tool img{
+    float: left;
+    margin: 3px 0px 0px 3px;
+}
+
+.popup-tool .popup-tool-content {
+    margin-left: 52px;
+    padding-right: 7px;
+}
+
+.popup-tool .popup-tool-content span.selected {
+    color: black;
+    background-color: yellow;
+}
+
+.popup-tool.hidden {
+    display: none;
+}

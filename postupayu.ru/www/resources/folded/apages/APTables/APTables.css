@@ -1,0 +1,111 @@
+.table-col-props {
+    white-space: nowrap;
+}
+
+.table {
+    cursor: default;
+    margin: 10px 0px 20px;
+}
+
+.table .content {
+    margin-left: 20px;
+}
+
+.table .if-selected {
+    display: none;
+}
+
+.table.selected .if-selected {
+    display: block;
+}
+
+
+/*
+ *  Включение/отключение таблицы + up/down
+*/
+.table .table-controller * {
+    color: black;
+}
+
+.table.was-selected .table-controller {
+    font-weight: bold;
+}
+
+.table .up-down {
+    display: none;
+} 
+
+.table.selected .up-down {
+    display: inline;
+}
+
+
+/*
+ * Настройки самой таблицы - редактируемая, синхронизируемая и т.д.
+*/
+.table .table-settings {
+    margin: 10px 0px;
+}
+
+.table .table-settings>div {
+    color: gray;
+    margin: 5px 0px;
+}
+
+.table .table-settings>div.on {
+    color: black;
+}
+
+/*
+ Натройка строк таблицы с полями
+*/
+
+.table table td, .table table th {
+    text-align: center;
+}
+
+.controls {
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.table span.down, .table span.up {
+    cursor: pointer;
+}
+
+.table input.selecttable {
+    float: left;
+}
+
+.table .comment {
+    color: gray;
+    font-size: 11px;
+}
+
+.table-control {
+    float: right;
+    word-spacing: 4px;
+    line-height: 5px;
+    font-size: 11px;
+}
+
+.table-control a {
+    color: gray;
+}
+
+.table-control a:hover {
+    color: black;
+}
+
+a.table-view {
+    color: black;
+}
+
+table td input[type="checkbox"] {
+    vertical-align: sub;
+}
+
+div.table-entitys {
+    cursor: default;
+    margin: 5px 0px;
+}

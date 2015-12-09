@@ -1,0 +1,170 @@
+.atom_plugin {
+    width: 640px;
+    margin: 0px auto;
+    /*    display: none;*/
+}
+
+.atom_plugin h2.title {
+    text-align: center;
+}
+
+/*Информационная таблица*/
+.atom_plugin .field .info {
+    display: none;
+    top: 1px;
+    left: 1px;
+    position: absolute;
+    width: auto;
+    z-index: 5;
+    margin: 0px;
+}
+
+.atom_plugin .field .info td {
+    border: none;
+    padding: 2px 10px 2px 0px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+/* Контрольная панель */
+.atom_plugin h3.tab_items {
+    margin: 15px 0px;
+}
+
+
+.atom_plugin .field {
+    background: url('src/orbit.png') center center no-repeat;
+    width: 600px;
+    height: 600px;
+    /*    border: 1px dashed #ddd;*/
+    margin: 0px auto;
+    position: relative;
+}
+
+.atom_plugin .field .dot {
+    position: absolute;
+    left: 300px;
+    top: 300px;
+    background-color: black;
+    width: 1px;
+    height: 1px;
+}
+
+.atom_plugin .field .core {
+    position: relative;
+    /*    background-color: #ddd;*/
+    text-align: center;
+}
+
+.atom_plugin .field .el {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url('src/el.png') center center no-repeat;
+}
+
+.atom_plugin .field .pr,
+.atom_plugin .field .ne {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.atom_plugin .field .pr {
+    background: url('src/pr.png') center center no-repeat;
+}
+
+.atom_plugin .field .ne {
+    background: url('src/nu.png') center center no-repeat;
+}
+
+
+/*
+    Таблица Меднелеева
+*/
+.Mendeleev td {
+    padding: 0px;
+    border-color: #ddd;
+}
+
+.Mendeleev td.s {
+    background-color: #f69;
+    background-color: #f8b;
+}
+
+.Mendeleev td.p {
+    background-color: #ff0;
+    background-color: #ff5;
+}
+
+.Mendeleev td.meta {
+    /*    color: gray;*/
+    font-size: 10px;
+    margin: 10px 0px;
+    text-indent: 1.5em;
+    padding: 3px 5px;
+    background-color: #efefef;
+}
+
+.Mendeleev .element.selected_green {
+    border-color: green;
+}
+
+.Mendeleev .element.selected_red {
+    border-color: red;
+}
+
+.Mendeleev .element {
+    width: 60px;
+    padding: 4px 6px;
+    position: relative;
+    height: 68px;
+    font-size: 11px;
+    border: 2px solid transparent;
+}
+
+.Mendeleev .element.O {
+    width: 80px;
+}
+
+.Mendeleev .element.C {
+    width: 76px;
+}
+
+.Mendeleev .element .sym {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.Mendeleev .element .name {
+    margin-bottom: 3px;
+}
+
+.Mendeleev .element .mass {
+    font-style: italic;
+    position: absolute;
+    left: 5px;
+    bottom: 3px;
+}
+
+.Mendeleev .element .num {
+    font-weight: bold;
+    font-size: 14px;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    color: #444;
+}
+
+.Mendeleev .element .lev {
+    text-align: left;
+    font-size: 9px;
+    margin-top: 3px;
+    color: #666;
+    width: 20px;
+    position: absolute;
+    right: 0px;
+    bottom: 3px;
+}

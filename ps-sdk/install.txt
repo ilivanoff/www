@@ -1,0 +1,15 @@
+Создаём новую ветку репозитория для проекта с папками www и db:
+ site.ru/
+         db
+	     www/
+			 autogen
+		     tests/
+				   tests
+				   tools
+	    
+
+Для папки db 	добавляем svn:externals - ^/trunk/ps-sdk/db/sdk sdk
+Для папки www 	добавляем svn:externals - ^/trunk/ps-sdk/www/sdk sdk
+Для папки tests добавляем svn:externals - ^/trunk/ps-sdk/www/tests/base base
+
+Папку autogen удалить и добавить в исключения

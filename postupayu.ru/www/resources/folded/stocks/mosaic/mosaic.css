@@ -1,0 +1,107 @@
+div.ps-mosaic-img {
+    margin: 0px auto;
+}
+
+div.ps-mosaic-img .ctrl {
+    margin: 20px 0px;
+}
+
+div.ps-mosaic-img .ctrl div {
+    margin: 5px 0px;
+}
+
+div.ps-mosaic-img .ctrl div .gray{
+    font-size: 11px;
+}
+
+div.ps-mosaic-img .holder{
+    position: relative;
+    background-color: #f3f3f3;
+    margin: 0px auto;
+}
+
+
+div.ps-mosaic-img .holder .bind{
+    display: none;
+}
+
+div.ps-mosaic-img .holder.binds-show .bind{
+    display: block;
+    position: absolute;
+    background-color: #F3F3F3;
+}
+
+
+div.ps-mosaic-img img.mosaic{
+
+}
+
+div.ps-mosaic-img .quest {
+    color: darkblue;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+div.ps-mosaic-img .answered, .ans_winner {
+    margin: 10px 0px 14px;
+    padding: 5px;
+    border: 1px solid gray;
+    background-color:#FFC;
+    /*    -moz-border-radius: 8px 8px 8px 8px;*/
+    -moz-box-shadow: 3px 3px 5px #DFDFDF;
+    position: relative;
+}
+
+div.ps-mosaic-img .answered .pscontrols {
+    display: none;
+}
+
+div.ps-mosaic-img .answered:hover .pscontrols {
+    position: absolute;
+    right: 5px;
+    bottom: 6px;
+    display: block;
+    background-color:#FFC;
+}
+
+table.stat {
+    width: 50%;
+}
+
+table.stat tr.user{
+    background-color: #9f9;
+}
+
+
+div.mosaic-popup {
+    position: absolute;
+    /*    width: 400px;*/
+    padding: 4px;
+    padding-right: 6px;
+    background-color: white;
+    border: 2px solid #bbb;
+    border-radius: 7px 7px 7px 7px;
+    font-family: Georgia;
+    max-width: 450px;
+}
+
+div.mosaic-popup .content{
+    margin-left: 50px;
+}
+
+div.mosaic-popup .content h5 {
+    margin: 0px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+div.mosaic-popup .content .message{
+    border-top: 1px dashed;
+    color: gray;
+    font-style: italic;
+    margin-top: 6px;
+    padding-top: 3px;
+}

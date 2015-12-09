@@ -1,0 +1,34 @@
+body {
+    background: white;
+}
+
+#header, #rightPanel, 
+#navigation_bar a.map, 
+#navigation_bar .controls {
+    display: none;
+}
+
+#navigation_bar {
+    padding-left: 0;
+}
+
+#carrier {
+    width: auto;
+    margin: 0px;
+    padding: 20px 30px;
+}
+
+#mainPanel {
+    background: none;
+}
+
+#leftPanel {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    float: none !important;
+}
+
+#content a[href^="http://"]:after {
+    content: " (" attr(href) ") ";
+}

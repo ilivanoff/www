@@ -1,0 +1,69 @@
+#mainPanel.RpHide{
+    background: none;
+}
+
+#mainPanel.RpHide #leftPanel{
+    width: 920px;
+}
+
+#mainPanel.RpHide #rightPanel{
+    display: none;
+}
+
+
+div.demo-head {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 40px 0px 20px;
+    background-color: #ddd;
+    padding: 5px;
+}
+
+div.demo-head.first{
+    margin-top: 0px;
+}
+
+.contents-toggler {
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.contents {
+    padding: 0px 20px;
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+.contents a{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+    white-space: nowrap;
+}
+
+
+.method-names td{
+    padding: 5px;
+    /*    border-color: #eee;*/
+}
+
+.method-names td.col1 {
+    width: 30%;
+}
+
+
+.testmethods button {
+    visibility: hidden;
+}
+
+.testmethods li:hover button{
+    visibility: visible;
+}
+
+/*
+ Для сортируемого списка сменим курсор
+*/
+#ps-sortable li {
+    cursor: move;
+}

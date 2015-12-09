@@ -1,0 +1,155 @@
+#ps-gallery-img-menu {
+    margin-bottom: 500px;
+}
+
+/*Кнопки сохранения для галереи*/
+.ps-gallery-buttons {
+    margin: 30px;
+    text-align: center;
+}
+
+.ps-gallery-controller .select-all label {
+    padding-left: 5px;
+}
+
+.ps-gallery-controller .select-all label input {
+    vertical-align: bottom;
+}
+
+/* Кнопки изменения размеров */
+.ps-gallery-controller .hg-self.fixed {
+    position: fixed;
+    right: 17px;
+    top: 6px;
+}
+
+.ps-gallery-controller .hg-self.fixed a {
+    font-weight: normal;
+}
+
+.ps-gallery-controller .image-table td {
+    vertical-align: top;
+    border: none;
+}
+
+.ps-gallery-controller td.image-holder {
+    color: #aaa;
+    cursor: move;
+    text-align: center;
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+.ps-gallery-controller img.preview {
+    /*Размер поумолчанию, затем будет переустановлен с помощью js*/
+    width: 150px;
+}
+
+.ps-gallery-controller .images .image.excluded img {
+    opacity: 0.3;
+}
+
+.ps-gallery-controller .images .image,
+.ps-gallery-controller .images .placeholder {
+    margin: 10px 0px;
+    padding: 0px;
+    border: 1px solid #ddd;
+}
+
+.ps-gallery-controller .images .image {
+    background-color: white;
+    position: relative;
+}
+
+.ps-gallery-controller .images .placeholder {
+    background-color: #FCEFA1;
+}
+
+.ps-gallery-controller td.path {
+    color: gray;
+    font-size: 11px;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.ps-gallery-controller .images .image .path input {
+    vertical-align: bottom;
+}
+
+.ps-gallery-controller .images .image.move {
+    border: 1px dashed green;
+}
+
+/*Кнопки управления самой картинкой*/
+.ps-gallery-controller .images .image .imgctrl {
+    text-align: right;
+    padding: 5px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.ps-gallery-controller .images .image .imgctrl a {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+}
+
+.ps-gallery-controller .images .image.local a.open {
+    background: url('src/disk-black.png') left center no-repeat;
+}
+
+.ps-gallery-controller .images .image.web a.open {
+    background: url('src/earth.png') left center no-repeat;
+}
+
+.ps-gallery-controller .images .image .imgctrl a.remove {
+    background: url('src/remove.png') left center no-repeat;
+}
+
+/*Настройки картинки*/
+table.ps-gal-settings td {
+    border: none;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+table.ps-gal-settings td input[type="text"] {
+    width: 100%;
+}
+
+.sections.all {
+    margin-left: 0px;
+}
+
+/* Кнопки управления */
+.APGalleries .controls {
+    float: right;
+}
+
+.APGalleries .controls a {
+    color: gray;
+}
+
+.APGalleries .controls a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+
+/*Добавление картинки из веба*/
+.web-img-add {
+    min-height: 1000px;
+}
+.web-img-add .img {
+    width: 100%;
+}
+.web-img-add img {
+    max-width: 100%;
+}
+.web-img-add .state {
+    margin: 10px 0px;
+}

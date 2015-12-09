@@ -1,0 +1,12 @@
+table.profilers {
+    text-align: left;
+}
+
+table.profilers thead {
+    white-space: nowrap;
+}
+
+a.prof-href {
+    color: black;
+    text-decoration: none;
+}

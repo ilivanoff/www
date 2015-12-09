@@ -1,0 +1,53 @@
+div.anons_carrier {
+    width: 450px;
+    margin: 0 auto;
+    height: 450px;
+    /*    background: url('/resources/images/is/Issue4/task1.png') center center no-repeat;*/
+    position: relative;
+}
+
+div.anons_carrier img{
+    float: left;
+}
+
+div.anons_carrier ol.anons{
+    list-style: none;
+    padding: 52px 0 0 90px;
+    position: absolute;
+}
+
+div.anons_carrier ol.anons li{
+    margin: 27px 0;
+}
+
+
+.anons_control {
+    text-align: center;
+    padding: 3px;
+}
+
+.anons_control, .anons_control a{
+    color: gray;
+}
+
+.anons_control a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.anons_control span.arr{
+    font-size: 14px;
+}
+
+.chess_champs td, .chess_champs th {
+    white-space: nowrap;
+    padding: 4px 5px;
+}
+
+.chess_champs_list .buttons {
+    margin-top: 15px;
+}
+
+.chess_champs_list .human_info{
+    display: none;
+}

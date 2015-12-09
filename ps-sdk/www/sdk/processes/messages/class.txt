@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Auto generated messages for file:
+ * {FILE}
+ * 
+ * Gen date:
+ * {DATE}
+ * 
+ * @author azazello
+ */
+final class {CLASS} {
+{METHODS}
+}
+?>

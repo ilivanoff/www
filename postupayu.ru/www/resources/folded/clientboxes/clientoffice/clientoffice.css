@@ -1,0 +1,32 @@
+/*
+    --== "Маленький" офис ==--
+*/
+
+#cb-clientoffice ~ h3{
+    background-color:green;
+    color: red;
+}
+
+#cb-clientoffice ul li a{
+    font-size: 14px;
+    padding-left: 25px;
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+#cb-clientoffice span.cnt {
+    font-weight: bold;
+    font-size: 11px;
+    color: green;
+    /*margin-left: 5px;*/
+    font-family: Arial, Helvetica, Garuda, sans-serif;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+
+#ps-events-notifier {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}

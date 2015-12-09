@@ -1,0 +1,19 @@
+#dg-hotkeys-dialog {
+    line-height: 1.6em;
+    text-align: left;
+}
+
+#dg-hotkeys-dialog div {
+    margin: 5px 0px;
+    white-space: nowrap;
+}
+
+#dg-hotkeys-dialog a {
+    color: #444;
+    font-weight: bold;
+}
+
+#dg-hotkeys-dialog a:hover {
+    color: black;
+    text-decoration: none;
+}

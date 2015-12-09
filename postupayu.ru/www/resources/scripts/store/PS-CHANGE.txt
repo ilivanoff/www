@@ -1,0 +1,4 @@
+Было изменено:
+
+1. Добавлены методы keys и has
+2. Модифицирован метод set: вместо "if (value === undefined) {" поставлено "if (value === undefined || value === null) {"

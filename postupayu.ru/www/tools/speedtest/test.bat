@@ -1,0 +1,1 @@
+php test.php postupayu.ru 1

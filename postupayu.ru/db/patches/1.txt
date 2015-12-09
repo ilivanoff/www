@@ -1,0 +1,21 @@
+drop table if exists ps_inflects;
+
+CREATE TABLE  ps_inflects
+(
+  id_inflect Int UNSIGNED NOT NULL AUTO_INCREMENT,
+  v_word Varchar(255) NOT NULL,
+  v_var1 Varchar(255) NOT NULL,
+  v_var2 Varchar(255) NOT NULL,
+  v_var3 Varchar(255) NOT NULL,
+  v_var4 Varchar(255) NOT NULL,
+  v_var5 Varchar(255) NOT NULL,
+  v_var6 Varchar(255) NOT NULL,
+ PRIMARY KEY (id_inflect)
+)
+  DEFAULT CHARACTER SET utf8
+  COLLATE utf8_bin
+  COMMENT = 'Склонение слов'
+;
+
+ALTER TABLE ps_inflects ADD UNIQUE v_word (v_word)
+;

@@ -1,0 +1,195 @@
+.pascal_tr {
+    /*JS will show it*/
+    display: none;
+}
+
+.pascal_tr h3 {
+    margin-top: 15px;
+}
+
+.pascal_tr h3.ctrl {
+    margin-top: 10px;
+    border-top: 1px dashed #ccc;
+    padding-top: 5px;
+}
+
+.pascal_tr h3.ptr_name input {
+    width: 30px;
+    text-align: center;
+    margin-left: 7px;
+}
+
+.pascal_tr .tabs {
+    margin: 10px 0px;
+}
+
+
+.pascal_tr .select_cell {
+    color: black;
+}
+
+.pascal_tr a.select_cell:hover{
+    cursor: default;
+    text-decoration: none;
+}
+
+/*Строка информации*/
+.pascal_tr .info {
+    margin: 7px 0px;
+    padding: 8px 0px;
+    border: 1px dashed gray;
+    border: none;
+    line-height: 1.6em;
+    /*    min-height: 26px;*/
+    vertical-align: middle;
+    text-align: center;
+}
+
+.pascal_tr .info .fill {
+    visibility: hidden;
+}
+
+.pascal_tr .info a.brush {
+    background: url(src/brush_gray.png) left bottom no-repeat;
+    padding-left: 13px;
+    color: black;
+    text-decoration: none;
+}
+
+.pascal_tr .info a.brush.active {
+    background-image: url(src/brush.png);
+    color: #40b524;
+    /*color: green;*/
+}
+
+/*Ссылки - триггеры*/
+.pascal_tr .triggers a{
+    color: black;
+    text-decoration: none;
+}
+
+.pascal_tr .triggers li.cur a {
+    font-weight: bold;
+}
+
+/* Подсказки */
+.pascal_tr .triggers .help_trigger {
+    cursor: pointer;
+}
+
+.pascal_tr .triggers .help_trigger.cur {
+    font-weight: bold;
+}
+
+.pascal_tr .triggers .help {
+    border: 1px dashed gray;
+    margin: 10px 0px;
+}
+
+.pascal_tr .triggers .help .content {
+    margin: 10px 12px;
+}
+
+.pascal_tr .triggers .help .content ol p {
+    text-indent: 0px;
+}
+
+.pascal_tr .triggers .instruction {
+    display: none;
+}
+
+.pascal_tr .triggers li.cur .instruction {
+    display: block;
+    margin: 10px 0px;
+    padding-left: 10px;
+    border-left: 1px solid #ddd;
+}
+
+/* ТРЕУГОЛЬНИК */
+.pascal {
+    width: auto;
+    /*    margin: 0px auto;*/
+    font-weight: bold;
+}
+
+.pascal td {
+    text-align: center;
+    border: none;
+
+    height: 30px;
+    width: 30px;
+
+    padding: 0px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*Кликабельные ячейки*/
+.pascal td.clickable:hover {
+    cursor: pointer;
+}
+
+
+
+.pascal td.numb, .pascal tr.top {
+    color: gray;
+    color: #444;
+}
+
+.pascal td:hover {
+    cursor: default;
+}
+
+.pascal tr.selected td.num,
+.pascal tr td.selected {
+    background-color: #FFCE9E;
+}
+
+.pascal tr.selected_blue td.num,
+.pascal td.selected_blue {
+    background-color: #96D4FF;
+}
+
+.pascal tr.selected_green td.num,
+.pascal td.selected_green {
+    background-color: #AAFFAA;
+}
+
+.pascal tr.selected_red td.num,
+.pascal td.selected_red {
+    background-color: #FF5F5F;
+
+}
+
+/*раскрашенный*/
+.pascal.painted td .fill {
+    visibility: hidden;
+}
+
+.pascal.painted td.chet {
+    background-color: red;
+}
+
+.pascal.painted td.nechet {
+    background-color: blue;
+}
+
+.pascal.painted tr.top {
+}
+
+/*
+    Вариант для всплывающего окна
+*/
+
+.pascal_tr.huge .pascal td {
+    height: 12px;
+    width: 15px;
+    padding: 2px;
+    font-weight: normal;
+    /*    font-size: 10px;*/
+}
+
+.pascal_tr.huge .pascal.painted td {
+    height: 15px;
+    width: 15px;
+}

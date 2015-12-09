@@ -1,0 +1,19 @@
+#ps-jq-state {
+    padding: 0px;
+    margin: 5px;
+    text-align: right;
+    color: #aaa;
+}
+
+#ps-jq-state.enabled {
+    color: green;
+    font-weight: bold;
+}
+
+#qunit-tests .module-name,
+#qunit-tests .test-name
+{
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}

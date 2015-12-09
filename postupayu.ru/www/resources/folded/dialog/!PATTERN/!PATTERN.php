@@ -1,0 +1,16 @@
+<?php
+
+class eclassname extends BaseDialog {
+
+    protected function getWindowTplSmartyParams() {
+        //Параметры для шаблона Smarty
+    }
+
+    protected function cacheGroup() {
+        //Группа кеширования
+        return null;
+    }
+
+}
+
+?>

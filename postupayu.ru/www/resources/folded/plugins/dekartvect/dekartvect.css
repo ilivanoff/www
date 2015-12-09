@@ -1,0 +1,15 @@
+.dekartvect_plugin {
+    width: 680px;
+    margin: 20px auto 30px;
+}
+
+.dekartvect_plugin .hg-next button {
+    float: right;
+}
+
+.dekartvect_plugin .info {
+    margin: 12px 0px;
+    border: 1px dashed gray;
+    padding: 5px;
+    line-height: 1.7em;
+}

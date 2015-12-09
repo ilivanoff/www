@@ -1,0 +1,13 @@
+.user-box {
+    margin-bottom: 30px;
+}
+
+.new-msgs {
+    color: green;
+    text-decoration: blink;
+    float: right;
+}
+
+#ap-APUsers .feed-history-holder {
+    margin-bottom: 300px;
+}

@@ -1,0 +1,1 @@
+svn checkout https://postupayu.googlecode.com/svn/trunk/postupayu.ru /var/www/postupayu.ru --username ivanov.ilya.alex@gmail.com

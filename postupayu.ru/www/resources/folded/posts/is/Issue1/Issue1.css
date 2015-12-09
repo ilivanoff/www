@@ -1,0 +1,76 @@
+/*
+	Анонс номера
+*/
+
+div.anons_carrier {
+    margin: 0 auto;
+    padding: 5px;
+    padding-left: 20px;
+    width: 500px;
+    border: 1px solid #666;
+    background-color:#FFC;
+    /*    -moz-border-radius: 8px 8px 8px 8px;*/
+    -moz-box-shadow: 3px 3px 5px #DFDFDF;
+}
+
+div.anons_carrier h2{
+    text-align:center;
+    font-weight:bold;
+}
+
+
+/*
+    Монетки
+*/
+table.coins{
+    width: 0%;
+    margin: 10px auto;
+}
+
+table.coins td{
+    padding: 0;
+    text-align: center;
+    padding: 3px;
+    border: none;
+}
+
+table.coins td div{
+    width: 40px;
+    height: 40px;
+}
+
+table.coins td img{
+    display: none;
+}
+
+table.coins td.r1 img.r1{
+    display: inline;
+}
+
+table.coins td.r1 img.r1:hover{
+    cursor: pointer;
+}
+
+table.coins td.r2 img.r2{
+    display: inline;
+}
+
+table.coins td.r1 div, table.coins td.r2 div{
+    display: none;
+}
+
+
+table.coins button{
+    border: 1px solid #ccc;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+table.coins button.success{
+    color: darkgreen;
+}
+
+table.coins td.button{
+    padding-top: 10px;
+    padding-bottom: 0px;
+}

@@ -1,0 +1,34 @@
+.derivative_plugin .field {
+}
+
+.derivative_plugin .grafics {
+    width: 600px;
+    margin: 10px auto;
+}
+
+.derivative_plugin .grafics .gr {
+    margin: 10px 0px;
+}
+
+.derivative_plugin .grafics .cb {
+    vertical-align: middle;
+}
+
+.derivative_plugin .grafics .controls {
+    width: auto;
+}
+
+.derivative_plugin .grafics .controls td {
+    vertical-align: middle;
+    text-align: left;
+    padding: 3px 10px 3px 0px;
+    border: none;
+}
+
+.derivative_plugin .grafics .controls tr:hover .buttons{
+    visibility: visible;
+}
+
+.derivative_plugin .grafics .controls .buttons {
+    visibility: hidden;
+}

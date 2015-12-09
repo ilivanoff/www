@@ -1,0 +1,14 @@
+.post_head {
+    margin-bottom: 1px;
+}
+
+.poet-tl-info {
+    position: relative;
+    background: url('/resources/images/bgs/poet.png') left top;
+    min-height: 500px;
+}
+
+.poet-tl-info img.cover {
+    position: absolute;
+    padding: 10px;
+}

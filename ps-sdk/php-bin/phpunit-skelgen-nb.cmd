@@ -1,0 +1,1 @@
+phpunit-skelgen generate-test --bootstrap %2 %5 %6 %7 %8

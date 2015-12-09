@@ -1,0 +1,5 @@
+insert into blog_post (id_rubric, name, ident, b_show, dt_publication, b_tpl, content, content_showcase) values ((select id_rubric from blog_rubric where ident='famous'), 'Пифагор Самосский', 'pifagor', 1, 1356984000, 1, null, null);
+insert into blog_post (id_rubric, name, ident, b_show, dt_publication, b_tpl, content, content_showcase) values ((select id_rubric from blog_rubric where ident='famous'), 'Евклид', 'euclide', 1, 1357329600, 1, null, null);
+insert into blog_post (id_rubric, name, ident, b_show, dt_publication, b_tpl, content, content_showcase) values ((select id_rubric from blog_rubric where ident='famous'), 'Архимед', 'arhimed', 1, 1357934400, 1, null, null);
+insert into blog_post (id_rubric, name, ident, b_show, dt_publication, b_tpl, content, content_showcase) values ((select id_rubric from blog_rubric where ident='sport'), 'Турники - всё, что Вам нужно', 'BP_SP1_turniki', 1, 1357675200, 1, null, null);
+insert into blog_post (id_rubric, name, ident, b_show, dt_publication, b_tpl, content, content_showcase) values ((select id_rubric from blog_rubric where ident='sport'), 'Как не посадить зрение', 'BP_SP2_zrenie', 1, 1361023500, 0, null, null);

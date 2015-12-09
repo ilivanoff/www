@@ -1,0 +1,4 @@
+news
+stock
+tools
+faq

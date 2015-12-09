@@ -1,0 +1,20 @@
+#ap-APAudit {
+    margin-bottom: 500px;
+}
+
+#ap-APAudit .search-results {
+    background-color: white;
+}
+
+#audit-statistic .results {
+    display: none;
+    margin: 20px 0px 10px;
+}
+
+#audit-statistic .results table {
+    width: 50%;
+}
+
+#audit-statistic .results table * {
+    white-space: nowrap;
+}

@@ -1,0 +1,173 @@
+/*
+    Тест
+*/
+
+.test{
+    margin: 20px 0px;
+    padding: 3px 10px;
+    -moz-box-shadow: 0 0 3px #999;
+}
+
+.test h2.name{
+    text-align: center;
+}
+
+.test .auto_slide {
+    text-align: center;
+    margin: 16px 0px;
+    color: gray;
+    font-size: 11px;
+}
+
+table.test_nums {
+    width: auto;
+    margin: 0px auto;
+    border-collapse: separate;
+    border-spacing: 6px 0px;
+}
+
+table.test_nums td{
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table.test_nums tr.pointer td{
+    border: none;
+    /*    font-size: 16px;*/
+}
+
+table.test_nums tr.pointer td.cur {
+    background-color: green;
+}
+
+table.test_nums tr.nums td {
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+
+    background-color: #eee;
+    border: 1px solid #ddd;
+    color: gray;
+}
+
+table.test_nums tr.nums td.done {
+    color: white;
+    border-color: #0a6;
+    background-color: #0b6;
+}
+
+table.test_nums tr.nums td.valid {
+    color: white;
+    border-color: #0a6;
+    background-color: #0b6;
+}
+
+table.test_nums tr.nums td.err {
+    color: white;
+    border-color: red;
+    background-color: red;
+
+}
+
+table.test_nums tr.nums td:hover {
+    cursor: pointer;
+    /*    border-color: gray;*/
+}
+
+table.test_nums tr.nums td.cur/*, 
+table.test td.cur:hover*/ {
+    color: black;
+    border-color: black;
+}
+
+div.test_tasks{
+
+}
+
+.test .tasks_slider {
+    text-align: center;
+    margin: 16px 0px;
+    font-size: 14px;
+}
+
+.test .timer {
+    padding: 5px;
+    margin: 16px 0 22px;
+    text-align: center;
+}
+
+.test .test_body{
+    display: none;
+}
+
+
+.test .start_test,
+.test .stop_test,
+.test .update_test_res{
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.test .update_test_res{
+    display: none;
+}
+
+/*
+    Результаты теста
+*/
+.test .test_results {
+    text-align: center;
+    margin: 25px 0px 20px;
+}
+
+.test .test_results div.new,
+.test .test_results div.last,
+.test .test_results div.lastfull,
+.test .test_results div.nainfo
+{
+    margin: 15px 0px;
+}
+
+.test .test_results div.last .ctrl{
+    margin-top: 4px;
+    font-size: 11px;
+    color: gray;
+}
+.test .test_results div.last .ctrl a{
+    color: gray;
+}
+
+.test .test_results .lastfull{
+    font-size: 14px;
+}
+
+.test .test_results .lastfull a{
+    color: black;
+    padding: 0px 2px;
+    /*    margin: 0px 2px;*/
+}
+
+.test .test_results .lastfull a.cur {
+    background-color: #fcd;
+}
+
+.test .test_results .lastfull a.cur.valid {
+    background-color: #cfd;
+}
+
+.test .test_results .lastfull a:hover{
+    text-decoration: none;
+}
+
+.test .test_results .nainfo {
+}
+
+.test .test_results .new,
+.test .test_results .lastfull
+{
+    display: none;
+}
+

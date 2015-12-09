@@ -1,0 +1,44 @@
+/*
+    Таблица распознавания слов.
+*/
+.findwords{
+    /*        width: auto;*/
+}
+
+.findwords td{
+    border: none;
+    padding: 5px;
+}
+
+.findwords .col1{
+    cursor: default;
+}
+
+.findwords .col3{
+    width: 100%;
+}
+
+.findwords tr.correct input{
+    background-color: #cf9;
+}
+
+.findwords span.ans{
+    cursor: pointer;
+}
+
+.findwords .col3 img, .findwords tr.correct span.ans{
+    display: none;
+}
+
+.findwords tr.correct .col3 img{
+    display: inline;
+}
+
+.findwords tr.ctrl a{
+    color: #007B00;
+}
+
+.findwords tr.ctrl a:hover{
+    border-bottom: 1px solid #007B00;
+    text-decoration: none;
+}

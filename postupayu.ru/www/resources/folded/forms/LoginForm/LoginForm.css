@@ -1,0 +1,15 @@
+/*
+    Форма авторизации
+*/
+#LoginForm {
+
+}
+
+#LoginForm p a.remind {
+    float: right;
+    color: #aaa;
+}
+
+#LoginForm p a.remind:hover {
+    color: gray;
+}

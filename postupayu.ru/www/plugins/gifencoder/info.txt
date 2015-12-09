@@ -1,0 +1,1 @@
+http://www.jeroenvanwissen.nl/weblog/php/howto-generate-animated-gif-with-php

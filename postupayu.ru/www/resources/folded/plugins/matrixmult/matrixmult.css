@@ -1,0 +1,109 @@
+.matrixmult {
+    margin: 10px 0px;
+}
+
+.matrixmult table.field {
+    width: auto;
+}
+
+.matrixmult table.field td {
+    border: none;
+    padding: 5px 8px;
+    text-align: center;
+
+}
+
+/* Размеры */
+.matrixmult table.field tr.sizes td {
+    vertical-align: middle;
+    white-space: nowrap;
+    padding: 0px;
+}
+
+.matrixmult table.field tr.sizes td input{
+    text-align: center;
+    width: 25px;
+    border: 1px solid transparent;
+    font-size: 12px;
+}
+
+.matrixmult table.field tr.sizes td.hard{
+    /*    color: gray;*/
+    font-weight: bold;
+}
+
+.matrixmult table.field tr.sizes td input:focus{
+    text-align: center;
+    width: 25px;
+    border-color: #ccc;
+}
+
+/* Кнопки управления */
+.matrixmult .controls {
+    margin: 10px 0px 20px;
+}
+
+/* Информация о приложении */
+.matrixmult .info {
+    margin: 10px 0px;
+    display: none;
+}
+
+.matrixmult .info .ctrl_descr {
+    margin: 10px 0px;
+    text-align: left;
+}
+
+/* Результат */
+.matrixmult .cell_detail {
+    margin: 10px;
+}
+
+
+table.matrix {
+    border-left: 3px double black;
+    border-right: 3px double black;
+    width: auto;
+    display: inline-block;
+    border-collapse: separate; 
+    border-spacing: 7px;
+    margin: 0px;
+    vertical-align: middle;
+}
+
+table.matrix td {
+    padding: 2px !important;
+    cursor: default;
+}
+
+table.matrix td,
+table.matrix td *{
+    border: none;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table.matrix.marked td,
+table.matrix.marked td * {
+    color: #ddd;
+}
+
+table.matrix.marked td.selected,
+table.matrix.marked td.selected * {
+    color: #1560BD;
+}
+
+table.matrix td input:focus {
+    background-color: #fc6;
+}
+
+table.matrix td a {
+    color: black;
+}
+
+table.matrix td a:hover {
+    text-decoration: none;
+    font-weight: bold;
+}

@@ -1,0 +1,61 @@
+1) Подключаем к странице скрипты:
+<script language="javascript" type="text/javascript" src="resources/scripts/tinymce/jscripts/tiny_mce/tiny_mce.js"></script>
+
+2) Инициализируем TinyMCE:
+
+    /*
+     * Нстройка форм комментированя
+     */
+    if(typeof(tinyMCE)!='undefined' && tinyMCE){
+        return;
+        /* Перед сохранением заполним значениями все текстовые поля. */
+        $(":submit").live('click', function() {
+            tinyMCE.triggerSave();
+        });
+
+        tinyMCE.init({
+            mode : "textareas",
+            theme : "advanced",
+            language: "ru",
+            plugins : "preview, fullscreen",
+            /*
+            skin : "o2k7",
+            skin_variant : "silver",
+             */
+            plugin_preview_width : popupWindowManager.windowWidth,
+            plugin_preview_height : popupWindowManager.windowHeight,
+
+            theme_advanced_toolbar_location : "top",
+            theme_advanced_toolbar_align : "left",
+            content_css : "resources/css/TinyMCE_custom_content.css",
+            theme_advanced_buttons1 : "bold,italic,underline,strikethrough,|,bullist,numlist,|,sub,sup,|,link,unlink,|,forecolor,backcolor,|,ps_formula,|, preview, fullscreen",
+            theme_advanced_buttons2 : "",
+            theme_advanced_buttons3 : "",
+            setup : function(ed) {
+                // Add a custom button
+                ed.addButton('ps_formula', {
+                    title : 'Формулы',
+                    image : '/resources/images/icons/mce_buttons/formula.png',
+                    onclick : function() {
+                        popupWindowManager.openWindow('formula');
+                    }
+                });
+            /*
+            ed.addButton('ps_preview', {
+                title : 'Предварительный просмотр',
+                image : 'resources/images/icons/mce_buttons/preview.png',
+                onclick : function() {
+                    var span = $('span#'+ed.id+'_parent');
+                    if(span.size()!=1){
+                        alert('More then one comment forms found!');
+                        return;
+                    }
+                    discussionController.clearCommentsPreviev();
+                    $('<div>').addClass('comment_preview comment_text').html(ed.getContent()).insertAfter(span);
+                    updateFormules();
+                }
+            });
+                 */
+            }
+        });
+    }

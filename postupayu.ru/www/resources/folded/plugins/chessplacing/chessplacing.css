@@ -1,0 +1,147 @@
+/*
+    Как ходит конь
+*/
+.chessplacing{
+    margin: 30px auto;
+    width: 650px;
+}
+
+.figs{
+    width: auto;
+    margin: 0px auto;
+    border-collapse: separate;
+    border-spacing: 5px
+}
+
+.figs td{
+    border-color: transparent;
+}
+
+.figs td img{
+    vertical-align: middle;
+}
+
+.figs tr.chessfigs td{
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px;
+    width: 47px;
+    height: 47px;
+
+    -moz-border-radius: 7px 0px 7px 7px;
+    border-radius: 7px 0px 7px 7px;
+}
+
+.figs tr.chessfigs td:hover{
+    cursor: pointer;
+}
+
+.figs tr.chessfigs td.current{
+    background-color: #FFCE9E;
+    border-color: gray;
+}
+
+.figs tr.chessfigs td.current:hover{
+    cursor: default;
+}
+
+/*Независимость*/
+.figs tr.chessfigs td.done0 {
+    background-color: #0d6;
+}
+
+/*Доминирование*/
+.figs tr.chessfigs td.done1{
+    background-color: #f66;
+}
+
+.figs tr.answers td {
+    height: auto;
+}
+
+
+
+
+
+/*
+    Панель управления/информации
+*/
+.chessplacing .info{
+    text-align: center;
+    padding: 3px;
+    font-weight: bold;
+    color: gray;
+}
+
+.chessplacing .info span{
+    color: #595959;
+}
+
+.chessplacing .done{
+    color: #4169E1;
+    text-decoration: blink;
+}
+
+/*
+    Переключение режима
+*/
+.chessplacing .mode{
+    text-align: center;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+
+.chessplacing .mode_info{
+    color: gray;
+    text-align: center;
+    font-size: 11px;
+    font-style: italic;
+    margin-top: 2px;
+}
+
+.chessplacing .mode a{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/*Режим - независимость*/
+.chessplacing .mode a.m0{
+    color: green;
+}
+
+/*Режим - доминирование*/
+.chessplacing .mode a.m1{
+    color: #B32C2C;
+}
+
+/*
+    Таблица с комбинациями
+*/
+
+.combinations{
+    /*    margin: 20px 0 0px;*/
+}
+
+.combinations th, .combinations td{
+    text-align: center;
+}
+
+.combinations .first{
+    text-align: left;
+}
+
+/*
+ * Оставшиеся фигуры
+*/
+
+.figures_left{
+    margin-top: 40px;
+    margin-left: 10px;
+    float: left;
+    position: absolute;
+}
+
+.figures_left img{
+    margin: 3px;
+    /*    height: 15px;*/
+}

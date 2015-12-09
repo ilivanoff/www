@@ -1,0 +1,1 @@
+<p class="signature">Искренне Ваш, <span>Иванов И.</span></p>

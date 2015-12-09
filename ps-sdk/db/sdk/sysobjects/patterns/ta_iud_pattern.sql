@@ -1,0 +1,12 @@
+delimiter |
+
+DROP TRIGGER IF EXISTS <%NAME%>;
+
+CREATE TRIGGER <%NAME%> AFTER <%ACTION%>
+  ON <%TABLE%> FOR EACH ROW 
+BEGIN
+<%CALL%>
+END
+|
+
+delimiter ;

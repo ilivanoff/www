@@ -1,0 +1,42 @@
+/*
+    Опечатки
+*/
+.missprints li {
+    padding: 3px;
+    border: 1px solid transparent;
+    margin: 10px 0px;
+    border-top-color: #dfdfdf;
+}
+
+.missprints li:hover {
+    background-color: #fcfcfc;
+    border-color: #ccc;
+}
+
+.missprints li h4 {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.missprints li .ctrl{
+    position: relative;
+    visibility: hidden;
+}
+
+.missprints li .href{
+    color: gray;
+    visibility: hidden;
+}
+
+.missprints li:hover .ctrl,
+.missprints li:hover .href{
+    visibility: visible;
+}
+
+.missprints .pscontrols{
+    background-color: white;
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+}
+

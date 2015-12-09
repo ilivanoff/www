@@ -1,0 +1,7 @@
+Взято с
+http://blogs.sitepoint.com/build-auto-expanding-textarea-3/
+
+Внимание!!!
+В исходниках была закомментирована строка:
+$(this).css("padding-top", 0).css("padding-bottom", 0);
+Нам не нужно отменять вертикальные границы

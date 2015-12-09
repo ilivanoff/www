@@ -1,0 +1,26 @@
+/* Плагины */
+#dg-plugins {
+    text-align: left;
+    padding-top: 7px;
+}
+
+#dg-plugins img {
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+
+#dg-plugins select {
+    width: 310px;
+    padding: 2px;
+    overflow: hidden;
+}
+
+#dg-plugins select option {
+    padding: 1px 2px;
+}
+
+#dg-plugins .select-holder {
+    padding-top: 5px;
+    margin-left: 50px;
+}

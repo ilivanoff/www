@@ -1,0 +1,156 @@
+.trigkrug_plugin {
+    display: none;
+}
+
+.trigkrug_plugin .field {
+    background: url('src/circ.png') center center no-repeat;
+    width: 680px;
+    height: 600px;
+    /*    border: 1px dashed #ddd;*/
+    margin: 0px auto;
+    position: relative;
+}
+
+.trigkrug_plugin .field .dot {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: #444;
+}
+
+.trigkrug_plugin .field .dot.gray {
+    width: 2px;
+    height: 2px;
+    background-color: #ccc;
+}
+
+.trigkrug_plugin .field .dot.marker {
+    width: 6px;
+    height: 6px;
+    background-color: #444;
+    border-radius: 2px 2px 2px 2px;
+}
+
+.trigkrug_plugin .field .perp {
+    position: absolute;
+    border-bottom: 1px dashed gray;
+    border-right: 1px dashed gray;
+}
+
+.trigkrug_plugin .field .mark {
+    position: absolute;
+    z-index: 3;
+}
+
+.trigkrug_plugin .field .mark.X {
+    height: 3px;
+    background-color: green;
+}
+
+.trigkrug_plugin .field .mark.Y {
+    width: 3px;
+    background-color: blue;
+}
+
+.trigkrug_plugin .field .label {
+    position: absolute;
+    font-weight: bold;
+}
+
+.trigkrug_plugin .field .label.X {
+    color: green;
+}
+
+.trigkrug_plugin .field .label.Y {
+    color: blue;
+}
+
+
+/*Координаты точки P*/
+.trigkrug_plugin .field .P {
+    position: absolute;
+    padding: 2px;
+    white-space: nowrap;
+    cursor: default;
+}
+
+.trigkrug_plugin .field .P .sin,
+.trigkrug_plugin .field .P .cos {
+    /*    font-size: 10px;*/
+    color: gray;
+}
+
+.trigkrug_plugin .field .cos.active {
+    font-weight: bold;
+    color: green;
+}
+
+.trigkrug_plugin .field .sin.active {
+    font-weight: bold;
+    color: blue;
+}
+
+.trigkrug_plugin .field .alpha {
+    position: absolute;
+    cursor: default;
+    /*    font-size: 18px;*/
+}
+
+/*
+    Информационная таблица
+*/
+.trigkrug_plugin .field .info {
+    position: absolute;
+    display: none;
+}
+
+.trigkrug_plugin .field div.info {
+    left: 3px;
+    top: 16px;
+}
+
+.trigkrug_plugin .field table.info {
+    left: 0px;
+    top: 0px;
+    width: auto;
+}
+
+.trigkrug_plugin .field .info td {
+    border: none;
+    padding: 2px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.trigkrug_plugin .field .info td.a_val,
+.trigkrug_plugin .field .info td.s_val,
+.trigkrug_plugin .field .info td.c_val {
+    text-align: left;
+}
+
+/*
+    Таблица с функциями
+*/
+
+.trigkrug_plugin .funcs{
+    cursor: default;
+}
+
+.trigkrug_plugin .funcs tbody td:not(.thead) {
+    cursor: pointer;
+}
+
+.trigkrug_plugin .funcs .cos.selected {
+    cursor: default;
+    background-color: #98FB98;
+}
+
+.trigkrug_plugin .funcs .sin.selected {
+    cursor: default;
+    background-color: #9CF;
+}
+
+.trigkrug_plugin .funcs .marked {
+    background-color: #F5DEB3;
+    background-image: none;
+}

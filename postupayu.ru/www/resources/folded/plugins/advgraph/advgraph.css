@@ -1,0 +1,72 @@
+.advgraph_plugin {
+    width: 680px;
+    margin: 10px auto;
+}
+
+.advgraph_plugin .grafics .controls {
+    width: auto;
+}
+
+.advgraph_plugin .grafics .controls td {
+    vertical-align: middle;
+    text-align: left;
+    padding: 3px 11px 3px 0px;
+    border: none;
+}
+
+.advgraph_plugin .grafics .controls td.rb input {
+    display: none;
+}
+
+.advgraph_plugin .grafics .controls.rb td.rb input {
+    display: inline;
+}
+
+.advgraph_plugin .grafics .controls tr.func:hover .buttons,
+.advgraph_plugin .grafics .controls tr.func.edit .buttons {
+    visibility: visible;
+}
+
+.advgraph_plugin .grafics .controls tr.func .buttons {
+    visibility: hidden;
+}
+
+/*Подсказка*/
+.advgraph_plugin .grafics .help {
+    margin: 10px 0px;
+}
+
+.advgraph_plugin .grafics .help a.h {
+    color: #bbb;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.advgraph_plugin .grafics .help .content {
+    display: none;
+}
+
+.advgraph_plugin .grafics .help.active a.h {
+    font-size: 12px;
+    font-weight: bold;
+    color: #1560BD;
+}
+
+.advgraph_plugin .grafics .help.active .content {
+    display: block;
+}
+
+/*Контрольная панель показа производной*/
+.advgraph_plugin .grafics .modes .tab {
+    margin: 10px 0px;
+    border: 1px dashed gray;
+    padding: 8px;
+}
+
+.advgraph_plugin .grafics .modes .tab .sub {
+    padding-top: 7px;
+}
+
+.advgraph_plugin .grafics .modes label {
+    margin-right: 9px;
+}

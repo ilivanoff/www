@@ -1,0 +1,22 @@
+#carrier {
+    width: 960px;
+    color: #B7C0C7;
+    margin: 100px auto 0px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+#carrier .errtext {
+    font-size: 80px;
+}
+
+#carrier a {
+    color: #B7C0C7;
+    text-decoration: none;
+    border-bottom: 1px solid #B7C0C7;
+}
+
+#carrier a:hover {
+    color: #245E93;
+    border-color: #245E93;
+}

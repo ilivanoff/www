@@ -1,0 +1,313 @@
+html, body {
+    text-align: center;
+}
+
+body {
+    background-color: #F0F0F0;
+}
+
+#carrier {
+    width: 960px;
+    margin: 0 auto;
+    text-align: justify;
+    background-color: #FFFFFF;
+}
+
+/*
+        ЗАГОЛОВОК
+*/
+
+#header {
+    border-top: 2px solid #333399;
+    padding-bottom: 15px;
+    position: relative;
+    /*background:url(../images/images4use/BG/Opera-Background-Lite.jpg) left center no-repeat;*/
+}
+
+#header a.logo {
+    float: left;
+    margin: 30px;
+}
+
+#adminPages{
+    /*    float:left;*/
+    display: inline-block;
+    margin: 20px 0 0 20px;
+}
+
+#adminPages .current{
+    font-weight: bold;
+}
+
+#adminPages .group {
+    color: gray;
+    font-weight: bold;
+    margin: 20px 0px 10px 0px;
+}
+
+#header .adminControls {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+#header .adminControls a {
+    color: #ccc;
+    margin-left: 15px;
+}
+
+#header .adminControls a.logout {
+    font-weight: bold;
+}
+
+#header .adminControls a:hover,
+#header .adminControls a.active {
+    text-decoration: none;
+    color: black;
+}
+
+#header .adminExit{
+    display: block;
+    float:right;
+    margin: 10px 10px 0 0;
+}
+
+#header a.processing {
+    padding-right: 22px;
+    background: url(/resources/images/icons/loading/loading16.gif) right center no-repeat;
+    cursor: default;
+    color:gray;
+}
+
+#adminPageContent{
+    border-top: 1px solid #E3E3E3;
+    border-bottom: 1px solid #E3E3E3;
+}
+
+#adminPageContent .adminPageContainer {
+    margin: 20px;
+}
+
+span.feedTheme, span.feedText{
+    color:gray;
+    font-style:italic;
+}
+
+ul.statInfo {
+    margin: 15px 1.5em;
+}
+
+ul.statInfo li span{
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+
+ul.discussion p.postName{
+    padding: 0;
+    margin: 10px 0;
+}
+
+ul.discussion form{
+    margin: 10px 0 20px;
+}
+
+ul.discussion form p{
+    margin-bottom: 10px;
+}
+
+table#users_info {
+    margin-bottom:20px;
+}
+
+table#users_info tr:hover{
+    background-color: transparent;
+}
+
+table#users_info tr.odd:hover{
+    background-color: #E7F5FF;
+}
+
+tr:hover {
+    /*    background-color:#acf;*/
+}
+
+
+.user_card_control{
+    text-align: right;
+}
+
+
+/*
+    Настройки активации поста
+*/
+.post_settings {
+    width: auto;
+}
+
+.post_settings td {
+    padding: 5px;
+    padding-left: 0px;
+    border: none;
+}
+
+.post_settings td input,
+.post_settings td select {
+    width: 350px;
+}
+
+.post_settings.visible td input,
+.post_settings.visible td select{
+    width: auto;
+}
+
+.posts li .pscontrols{
+    visibility: hidden;
+}
+
+.posts li:hover .pscontrols{
+    visibility: visible;
+}
+
+.post_settings .pscontrols a{
+    margin-left: 0px;
+}
+
+ol.posts li {
+    padding: 2px;
+    border: 2px dashed transparent;
+}
+
+ol.posts li:hover {
+    border-color: #ddd;
+}
+
+ol.posts li .cover {
+    padding-top: 5px;
+}
+
+#PostEditForm textarea{
+    height: 1000px;
+}
+
+#PostEditForm textarea:focus{
+    background-color: white;
+}
+
+/*
+    Столбцы управления в таблицах
+*/
+td.td-ctrl {
+    color: gray;
+    cursor: default;
+    text-align: center;
+    white-space: nowrap;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+td.td-ctrl a {
+    color: gray;
+    padding: 0px;
+    background: none;
+    text-decoration: none;
+}
+
+
+td.td-ctrl.create a:hover {
+    color: green;
+}
+
+td.td-ctrl.edit a:hover {
+    color: #245E93;
+}
+
+td.td-ctrl.delete a:hover {
+    color: #B32C2C;
+}
+
+.ps-page-nav {
+    padding-left: 12px;
+}
+
+/*
+    Навигация по folding-like сущностям
+*/
+.ap-navigation {
+    margin: 10px 0px 10px 10px;
+}
+
+.ap-navigation li {
+    margin: 10px 0px;
+}
+
+.ap-navigation li a {
+    color: black;
+    font-weight: bold;
+}
+
+.ap-navigation li .small {
+    color: gray;
+    font-size: 10px;
+    font-weight: normal;
+    margin-left: 3px;
+}
+
+.ap-navigation li span.small {
+    cursor: default;
+}
+
+.ap-navigation li img {
+    vertical-align: middle;
+}
+
+.ap-navigation li .hiddable {
+    visibility: hidden;
+}
+
+.ap-navigation li:hover .hiddable {
+    visibility: visible;
+}
+
+/* Отцентрируем картинки а заголовках */
+h3 img {
+    vertical-align: calc();
+}
+
+
+/* Текст в ссылках */
+ul#adminPages {
+    padding: 5px 10px;
+}
+
+ul#adminPages span.small {
+    font-size: 11px;
+}
+
+ul#adminPages.editable {
+    background-color: #eee;
+}
+
+ul#adminPages li a.add, 
+ul#adminPages li a.remove {
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+ul#adminPages.editable li a {
+    cursor: move;
+}
+
+ul#adminPages li a.add {
+    color: green;
+}
+
+ul#adminPages li a.remove {
+    color: red;
+    cursor: pointer;
+}
+
+ul#adminPages li.buttons button {
+    margin-right: 5px;
+}

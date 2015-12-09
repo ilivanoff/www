@@ -1,0 +1,46 @@
+.controls {
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.sql {
+    border: 1px solid #eee;
+    padding: 10px;
+    text-align: left;
+    margin: 10px 0px;
+    word-wrap: break-word;
+}
+
+ol.diffs li {
+    margin-bottom: 30px;
+    border: 1px dashed gray;
+    padding: 10px;
+}
+
+.rec-control {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.header img {
+    vertical-align: middle;
+}
+
+.add-ctrls {
+    margin-top: 20px;
+}
+
+.add-ctrls a {
+    color: gray;
+    margin-left: 10px;
+}
+
+.dep-foldings {
+    margin: 10px 0px;
+}
+
+.dep-foldings a1 {
+    color: black;
+    background: none;
+    padding: 0px;
+}

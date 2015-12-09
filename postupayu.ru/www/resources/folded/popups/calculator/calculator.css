@@ -1,0 +1,26 @@
+textarea{
+    overflow: scroll;
+    margin-top: 10px;
+}
+
+table .col1{
+    /*    width: 150px;*/
+}
+
+table .col2{
+    /*    width: 150px;*/
+}
+
+form .result {
+    margin: 10px 0;
+    padding: 5px 3px;
+    border: 1px dashed gray;
+}
+
+form .result .content {
+    height: 14px;
+}
+
+th {
+    white-space: nowrap;
+}

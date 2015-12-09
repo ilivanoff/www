@@ -1,0 +1,12 @@
+#dg-misprint-dialog {
+    width: 640px;
+    height: 500px;
+}
+
+#dg-misprint-dialog .content {
+    color: gray;
+    font-style: italic;
+    /*
+    border: 1px dashed gray;
+    padding: 5px;*/
+}

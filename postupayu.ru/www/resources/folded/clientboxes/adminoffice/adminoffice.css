@@ -1,0 +1,16 @@
+#cb-adminoffice ul{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#cb-adminoffice .inactive{
+    color: gray;
+}
+
+#cb-adminoffice .active {
+    color: green;
+}
+
+#cb-adminoffice {
+    margin-bottom: 40px;
+}

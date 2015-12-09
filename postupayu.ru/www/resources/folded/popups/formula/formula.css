@@ -1,0 +1,12 @@
+div.formula{
+}
+
+textarea{
+    overflow: scroll;
+}
+
+.latex{
+    padding: 7px;
+    border: 1px dashed #2F6FAB;
+    margin: 3px auto;
+}

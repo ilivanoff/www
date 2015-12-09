@@ -1,0 +1,32 @@
+#comments, #commentForm, .post_ctrl, 
+.post_bottom .watch_cnt,
+.answer_block,
+.postMeta, 
+.video /*, .footer*/, 
+.media,
+.hidden_text,
+.noprint {
+    display: none;
+}
+
+/*
+ * Данные блоки итак не видны, и "проявляются" только при наведении курсора на родительский блок.
+ * Чтобы запретить такое поведение, необходимо добавить специальный класс.
+*/
+#print_variant .pscontrols,
+#print_variant .top_control {
+    display: none;
+}
+
+.post_bottom{
+    padding: 10px 0px;
+    background: none;
+}
+
+span.math_vector {
+    font-weight: bold;
+}
+
+a[href^="http://"]:after {
+    content: " (" attr(href) ") ";
+}

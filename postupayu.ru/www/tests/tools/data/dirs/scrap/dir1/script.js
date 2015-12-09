@@ -1,0 +1,1 @@
+var MyVar = 1;

@@ -1,0 +1,19 @@
+.pyatnashki_plugin {
+
+}
+
+.pyatnashki_plugin .controls{
+    font-size: 13px;
+    /*    font-weight: bold;*/
+    color: #444;
+}
+
+.pyatnashki_plugin .controls .time{
+    display: inline-block;
+    width: 40px;
+}
+
+.pyatnashki_plugin .controls .hodes{
+    display: inline-block;
+    width: 25px;
+}

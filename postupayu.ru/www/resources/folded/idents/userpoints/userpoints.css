@@ -1,0 +1,35 @@
+.user_points_recalc {
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.ps-user-points {
+    cursor: default;
+}
+
+.point-box {
+    background-color: #E7F5FF;
+    margin-bottom: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    border: 1px dashed #eee;
+    position: relative;
+}
+
+.point-box h4 {
+    margin-top: 0px;
+}
+
+.point-box h6 {
+    margin-bottom: 0px;
+}
+
+.point-box .point-cnt {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    float: left;
+    font-size: 16px;
+    color: green;
+    font-weight: bold;
+}

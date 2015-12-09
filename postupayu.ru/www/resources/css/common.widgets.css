@@ -1,0 +1,636 @@
+/*
+    --== ДЕКАРТОВА СИСТЕМА КООРДИНАТ ==--
+*/
+
+.DekartModul {
+    margin: 10px auto;
+}
+
+/*Управление (настройка вида)*/
+.DekartCtrl {
+    margin: 10px 0px;
+}
+
+.DekartCtrl label {
+    margin-right: 8px;
+    display: none; /*enable by js*/
+}
+
+.DekartCtrl button.imaged {
+    width: 22px;
+}
+
+.Dekart {
+    position: relative;
+    /*    border: 1px solid #ddd;*/
+    overflow: hidden;
+    z-index: 0;
+    /*width: 680px;*/
+    /*    background-color: #efefef;*/
+}
+
+.Dekart.originDrag{
+    cursor: move;
+}
+
+/*Элементы сетки*/
+.Dekart .Grid {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+}
+
+.Dekart .Grid * {
+    position: absolute;
+    display: none;
+    z-index: -100;
+}
+
+.Dekart .back * {
+    z-index: -98;
+}
+
+/*Оси*/
+.Dekart .Grid.axes .axe {
+    background-color: black;
+    width: 1px;
+    height: 1px;
+    z-index: -99;
+    display: block;
+}
+
+/*Засечки*/
+.Dekart .Grid.marks .mark {
+    background-color: black;
+    display: block;
+    width: 1px;
+    height: 1px;
+    z-index: -99;
+}
+
+/*Сетка*/
+.Dekart .Grid.grid .line {
+    display: block;
+    background-color: #C8C8C8;
+}
+
+/*Текст подписей (-1, 0, 1)*/
+.Dekart .Grid.marksText .markText {
+    color: #323232;
+    font-family: arial;
+    font-size: 9px;    
+    display: block;
+    cursor: default;
+}
+
+
+
+
+.Dekart .line {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background-color: #bbb;
+}
+
+.Dekart .dotMarker *{
+    z-index: 2;
+}
+
+/*Текст*/
+.Dekart .meta {
+    position: absolute;
+    padding: 2px;
+    font-size: 12px;
+    background-color: white;
+}
+
+
+/*
+    --== ЛЕГЕНДА ==--
+*/
+
+/*
+http://www.ejschart.com/ - взять окно легенды
+*/
+
+.ps-legend{
+    font-size: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #AAAAAA;
+    /*    opacity: 0.9;*/
+    position: absolute;
+    z-index: 9999;
+    color: #555555;
+    cursor: default;
+    white-space: nowrap;
+    text-align: left;
+}
+
+.ps-legend .ps-legend-caption{
+    /*    border-bottom: 1px solid #AAAAAA;*/
+    font-weight: bold;
+    height: 16px;
+    line-height: 16px;
+    overflow: hidden;
+    padding-left: 13px;
+    background: #EEEEEE url('/resources/images/icons/grabber.png') 3px center no-repeat;
+}
+
+.ps-legend .ps-legend-caption .ps-legend-controls {
+    color: #888;
+    float: right;
+    padding-right: 2px;
+    text-align: center;
+    font-size: 11px;
+}
+
+.ps-legend .ps-legend-caption .ps-legend-controls a {
+    color: #888;
+    margin-right: 5px;
+}
+
+.ps-legend .ps-legend-caption .ps-legend-controls a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+.ps-legend .ps-legend-caption .ps-legend-title{
+    margin-right: 30px;
+}
+
+.ps-legend .ps-legend-container{
+    border-top: 1px solid #AAAAAA;
+}
+
+.ps-legend .ps-legend-container .ps-legend-content {
+    margin: 3px 5px;
+}
+
+.ps-legend .ps-legend-container .ps-legend-content div {
+    margin: 5px 0px;
+}
+
+.ps-legend .ps-legend-owner{
+    border-top: 1px solid #AAAAAA;
+    height: 14px;
+    line-height: 14px;
+    overflow: hidden;
+    padding: 0 3px 0 2px;
+    background-color: #F4F4F4;
+    font-size: 9px;
+    color: gray;
+}
+
+.ps-legend .ps-legend-empty {
+    /*    font-style: italic;*/
+    color: gray;
+}
+
+
+/*
+    ГРУППА ССЫЛОК
+    hg - hrefs group
+*/
+
+/*Перелистывание одной ссылки за другой*/
+.hg-next {
+    margin: 7px 0px;
+}
+
+.hg-next a {
+    display: none;
+}
+
+.hg-next a.cur {
+    display: inline;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.hg-next a.cur.empty {
+    color: #999;
+    font-weight: normal;
+}
+
+/*Выбор одного варианта из нескольких*/
+.hg-self {
+}
+
+.hg-self a {
+    color: gray;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.hg-self a.cur {
+    color: black;
+}
+
+
+/*
+    Сортировка с сопоставлением
+*/
+
+/*table*/
+.ps-sortable-compare {
+    width: auto;
+    margin: 10px auto;
+}
+
+/* all[*] */
+.ps-sortable-compare * {
+    margin: 0px;
+    padding: 0px;
+    white-space: nowrap;
+}
+
+/*td*/
+.ps-sortable-compare td {
+    border: none;
+}
+
+.ps-sortable-compare td.ctrl {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.ps-sortable-compare td.ul1 {
+    text-align: right;
+}
+
+/*li*/
+.ps-sortable-compare li {
+    border: 1px solid #ccc;
+    cursor: default;
+    padding: 5px 12px;
+    margin-bottom: 5px;
+    background-color: #F5F5F5;
+    border-color: #cfcfcf;
+}
+
+.ps-sortable-compare li img {
+    vertical-align: top;
+}
+
+.ps-sortable-compare.editable .ul2 li {
+    cursor: move;
+}
+
+.ps-sortable-compare.editable.ready li {
+    border: 1px dashed #bbb;
+}
+
+
+.ps-sortable-compare li.placeholder {
+    background-color: white;
+}
+
+.ps-sortable-compare li.move {
+    border-color: transparent !important;
+}
+
+/*Ошибки*/
+.ps-sortable-compare li.error {
+    border-color: #D8000C;
+    background-color: #FFBABA;
+}
+
+.ps-sortable-compare li.success {
+    border-color: green;
+    background-color: #DFF2BF;
+}
+
+.ps-sortable-compare .ul1 li {
+    padding-right: 0px;
+    border-right: none !important;
+    text-align: right;
+}
+
+.ps-sortable-compare .ul2 li {
+    padding-left: 3px;
+    border-left: none !important;
+}
+
+
+/*
+    Простые сортируемые списки
+*/
+.ps-sortable li {
+    border: 1px solid #D3D3D3;
+    background-color: #EDEDED;
+    color: #555;
+    cursor: default;
+    margin: 2px 0px;
+    padding: 4px 8px;
+}
+
+
+/*
+    Пятнашки
+*/
+.ps-pyatnashki {
+}
+
+.ps-pyatnashki {
+    margin: 0px auto;
+    position: relative;
+    border: 2px solid #3080D0;
+}
+
+.ps-pyatnashki .cell {
+    position: absolute;
+    background-color: #DFF2BF;
+    text-align: center;
+    background: url(/resources/images/tile80.png) center center no-repeat;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+}
+
+.ps-pyatnashki.disabled{
+    border-color: gray;
+}
+
+.ps-pyatnashki.disabled .cell {
+    cursor: default;
+    background-image: url(/resources/images/tile80_gray.png);
+    color: #F0F0F0;
+}
+
+/*
+    --==ЧИСЛОВОЙ РЕБУС==--
+*/
+.ps-math-rebus-holder {
+    margin: 10px 0px;
+}
+
+.ps-math-rebus {
+    border: none;
+    width: 0%;
+    font-weight: bold;
+    float: left;
+    margin-right: 25px;
+}
+
+.ps-math-rebus td {
+    border: none;
+    padding: 4px;
+}
+
+.ps-math-rebus td.sign {
+    line-height: 1.8em;
+    padding-right: 8px;
+}
+
+.ps-math-rebus tr{
+    border: none;
+}
+
+.ps-math-rebus tr.result{
+    border-top: 1px black solid;
+}
+
+.ps-math-rebus tr.result td.first{
+    border-top: 1px transparent solid;
+}
+
+
+
+/*
+    --== ПРОГРЕСС ==--
+*/
+.ps-progress {
+    margin: 10px 0px;
+}
+
+.ps-progress .ps-progress-info{
+    margin: 5px 0px;
+}
+
+/*
+    Классы для jquery.ui
+
+    Для того, чтобы кнопки небыли такими большими
+*/
+.ui-button .ui-button-text {
+    line-height: 1.1em !important;
+}
+
+.ui-accordion .ui-accordion-content p {
+    text-indent: 0px;
+}
+
+.ui-accordion .ui-accordion-header a {
+    padding-top: 0.4em !important;
+    padding-bottom: 0.4em !important;
+    line-height: 1.1em !important;
+}
+
+
+/*
+    --== БЛОК СКРЫТОГО ТЕКСТА ==--
+*/
+.ps-hidden-box {
+    display: none;
+}
+
+div.ps-hidden-box {
+    margin: 10px 0px;
+}
+
+.ps-hidden-box-toggler {
+    color: gray;
+    cursor: pointer;
+}
+
+div.ps-hidden-box-toggler {
+    margin: 10px 0px;
+}
+
+/*
+ * CODEMIRROR
+*/
+.CodeMirror {
+    border: 1px dashed gray;
+    background-color: white;
+}
+
+.CodeMirror-scroll{
+    /*    overflow: visible !important;*/
+    /*    height: auto !important;*/
+}
+
+.CodeMirror.CodeMirror-fullscreen {
+    display: block;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: white;
+}
+
+.ps-codemirror-ctrl {
+    margin: 1px 0px;
+}
+
+.ps-codemirror-ctrl .ui-button-icon-only {
+    width: 22px;
+    height: 20px;
+}
+
+.ps-codemirror-ctrl .ui-button {
+    margin-right: -1px !important;
+}
+
+/*
+    ТАБЫ
+*/
+.ps-tabs {
+    display: none;
+}
+
+/*
+    ВРЕМЕННЫЕ ШКАЛЫ
+*/
+
+/* Основной блок */
+.ps-tl {
+    height: 400px;
+    margin: 10px 0;
+    border: 1px solid #aaa;
+}
+
+/* Фильтр + таблица элементов */
+.ps-tl-controller {
+
+}
+
+.ps-tl-controller .filter {
+    margin: 10px 0px;
+}
+
+.ps-tl-controller .filter input {
+    width: 50%;
+}
+
+.ps-tl-controller tr.hidden {
+    display: none;
+}
+
+.ps-tl-controller td {
+    border: none;
+    white-space: nowrap;
+    padding: 4px 10px;
+    width: 0%;
+}
+
+.ps-tl-controller td.main a {
+    color: black;
+    font-size: 13px;
+}
+
+.ps-tl-controller td.dates {
+    color:gray;
+    font-size: 10px;
+}
+
+/* Див для хранения загруженной информации об элементах временной шкалы */
+.ps-tl-data-holder {
+    margin: 10px 0px;
+}
+
+/*
+    Во всплывающих подсказках скроем полосы прокрутки
+*/
+div.simileAjax-bubble-contentContainer {
+    overflow-x: hidden !important;
+}
+
+div.timeline-event-bubble-title {
+    text-align: center;
+}
+
+/*
+    Окно прокрутки сайта
+*/
+#ps-page-scroller {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    z-index: 999;
+}
+
+#ps-page-scroller .ps-page-scroller-bg {
+    width: 48px;
+    height: 100%;
+    opacity: 0.1;
+    background-repeat: no-repeat;
+    background-position: center 20px;
+}
+
+#ps-page-scroller.up .ps-page-scroller-bg {
+    background-image: url('/resources/images/icons/arrow-up.png');
+}
+
+#ps-page-scroller.down .ps-page-scroller-bg {
+    background-image: url('/resources/images/icons/arrow-down.png');
+}
+
+#ps-page-scroller.scrollable {
+    cursor: pointer;
+}
+
+#ps-page-scroller.scrollable:hover .ps-page-scroller-bg {
+    background-color: #dfdfdf;
+}
+
+/*
+    БАЗОВЫЙ СОРТИРУЕМЫЙ СПИСОК
+    Доп примеры можно посмотреть у APMappings.
+*/
+.ps-sortable-base {
+}
+
+/* all[*] */
+.ps-sortable-base * {
+    margin: 0px;
+    padding: 0px;
+    white-space: nowrap;
+}
+
+.ps-sortable-base .placeholder {
+    /* Задаётся базовая высота для плейсхолдера, чтобы страница не "скакала" в начале перетаскивания */
+    height: 30px;
+}
+
+/*li*/
+.ps-sortable-base li {
+    border: 1px solid #ccc;
+    padding: 5px 12px;
+    margin-bottom: 5px;
+    background-color: #F5F5F5;
+    border-color: #cfcfcf;
+    text-align: left;
+}
+
+.ps-sortable-base li img {
+    vertical-align: top;
+}
+
+.ps-sortable-base li.placeholder {
+    background-color: white;
+}
+
+.ps-sortable-base li.move {
+    border-color: transparent !important;
+}

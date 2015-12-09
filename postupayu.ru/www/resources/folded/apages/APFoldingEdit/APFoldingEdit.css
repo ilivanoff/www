@@ -1,0 +1,58 @@
+/*
+    Редактирование поста
+*/
+.APFoldingEdit .ap_controls{
+    /*    text-align: right;*/
+    margin: 25px 0px;
+}
+
+.APFoldingEdit .ap_controls a {
+    color: #bbb;
+}
+
+.APFoldingEdit .ap_controls a:hover {
+    color: #888;
+    text-decoration: none;
+}
+
+.APFoldingEdit .preview.short{
+    width: 680px;
+}
+
+.APFoldingEdit span.controls {
+    float: right;
+}
+
+.APFoldingEdit span.controls a {
+    color: gray;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.APFoldingEdit span.controls a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/* Кнопка добавления записи */
+.no_items img {
+    vertical-align: middle;
+}
+
+.no_items a.clickable {
+    padding: 0px;
+    background: none;
+}
+
+/* Содержимое списка */
+.sortable-list-content li span {
+    cursor: move;
+}
+
+#tpl-smarty-params input {
+    width: 50%;
+}
+
+.APFoldingEdit .folding-list-creation {
+    margin-top: 30px;
+}

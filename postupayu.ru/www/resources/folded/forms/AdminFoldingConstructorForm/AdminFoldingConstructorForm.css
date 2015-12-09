@@ -1,0 +1,30 @@
+#form-AdminFoldingConstructorForm {
+
+}
+
+
+#form-AdminFoldingConstructorForm .folding-rtypes label {
+    display: block;
+    margin-bottom: 3px;
+}
+
+#form-AdminFoldingConstructorForm .folding-rtypes input {
+    width: auto;
+    margin-right: 5px;
+}
+
+
+#form-AdminFoldingConstructorForm .folding-ifaces {
+    margin: 10px 0px;
+    border: 1px dashed gray;
+    padding: 5px;
+}
+
+#form-AdminFoldingConstructorForm .folding-ifaces pre {
+    margin: 10px 0px;
+}
+
+#form-AdminFoldingConstructorForm .folding-ifaces input {
+    width: auto;
+    margin-right: 5px;
+}

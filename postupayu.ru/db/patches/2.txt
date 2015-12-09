@@ -1,0 +1,3 @@
+1) ps_testing.id_testing - Not auto increment
+2) ps_testing.n_tasks default null
+3) ps_props - Add table

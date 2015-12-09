@@ -1,0 +1,5 @@
+[2014-03-17 14:47:52] Shell command execution started...
+[2014-03-17 14:47:52] PROCESS: try to get lock
+[2014-03-17 14:47:52] PROCESS: lock taken
+[2014-03-17 14:48:02] PROCESS: lock released
+[2014-03-17 14:48:02] Shell command execution finished in 10.00549 seconds.

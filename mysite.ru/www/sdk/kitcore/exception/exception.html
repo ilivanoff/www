@@ -1,0 +1,39 @@
+<style type="text/css">
+    .ps-exception{
+        width:80%;
+        margin: 20px auto;
+        padding: 10px;
+        border: 3px double red;
+        background-color: white;
+        /*font-family: Helvetica, Arial, Verdana, Sans-serif;*/
+        text-align: left;
+    }
+
+    .ps-exception .title{
+        text-align: center;
+        text-transform: uppercase;
+        color: red;
+        font-weight: bold;
+    }
+
+    .ps-exception .message{
+        font-weight: bold;
+        margin: 10px 0px;
+    }
+
+    .ps-exception .stack{
+        line-height: 1.6em;
+        font-size: 12px;
+        font-weight: normal;
+        margin: 10px 0px;
+    }
+
+    .ps-exception .prevoius {
+        margin: 10px 0px 0px 5px;
+    }
+</style>
+
+<div class="ps-exception">
+    <div class="title">Во время выполнения скрипта возникло исключение:</div>
+    {STACK}
+</div>

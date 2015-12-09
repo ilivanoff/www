@@ -1,0 +1,1 @@
+<button class="imaged" type="button" title="{$title}" pageIdent="{$action}">{img dir='icons/controls' name="`$name`.png"}</button>

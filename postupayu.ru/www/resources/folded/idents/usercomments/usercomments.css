@@ -1,0 +1,34 @@
+#user_posts_comments {
+
+}
+
+#user_posts_comments h2.upc_cnt {
+    margin-bottom: 20px;
+}
+
+.user_post_comments {
+    margin: 10px 0px;
+}
+
+.user_post_comments .upc_content {
+    margin-left: 115px;
+}
+
+.user_post_comments .upc_comments {
+    /*    margin: 20px 0px 30px;*/
+    margin: 10px 0px 20px;
+    position: relative;
+}
+
+.user_post_comments .upc_comments .upc_controls {
+    text-align: right;
+    visibility: hidden;
+}
+
+.user_post_comments .upc_comments:hover .upc_controls {
+    visibility: visible;
+}
+
+.user_post_comments .upc_post_name{
+    margin-bottom: 20px;
+}
